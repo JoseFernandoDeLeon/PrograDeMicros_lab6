@@ -1,0 +1,302 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/postlab.o
+table CODE 0 0 0 17A 2 1
+udata_shr COMMON 1 70 70 8 1 1
+VectorReset CODE 0 0 0 3A 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 17A-1FFF 2
+ENTRY 17A-1FFF 2
+IDLOC 2000-2003 2
+CODE 17A-1FFF 2
+COMMON 78-7F 1
+EEDATA 2100-21FF 2
+STRCODE 17A-1FFF 2
+STRING 17A-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/postlab.o
+0 table CODE >171:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+100 table CODE >174:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+101 table CODE >175:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+102 table CODE >176:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+103 table CODE >177:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+104 table CODE >178:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+105 table CODE >179:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+106 table CODE >180:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+107 table CODE >181:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+108 table CODE >182:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+109 table CODE >183:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10A table CODE >184:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10B table CODE >185:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10C table CODE >186:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10D table CODE >187:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10E table CODE >188:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10F table CODE >189:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+110 table CODE >190:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+111 table CODE >191:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+112 table CODE >192:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+113 table CODE >193:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+114 table CODE >201:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+115 table CODE >202:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+116 table CODE >203:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+117 table CODE >204:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+118 table CODE >205:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+119 table CODE >206:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11A table CODE >208:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11C table CODE >220:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11D table CODE >221:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11E table CODE >222:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11F table CODE >228:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+121 table CODE >229:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+122 table CODE >230:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+123 table CODE >232:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+125 table CODE >233:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+126 table CODE >234:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+127 table CODE >235:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+128 table CODE >237:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12A table CODE >238:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12B table CODE >239:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12C table CODE >240:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12D table CODE >242:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12E table CODE >245:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+130 table CODE >246:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+131 table CODE >247:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+132 table CODE >248:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+133 table CODE >250:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+134 table CODE >252:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+135 table CODE >255:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+137 table CODE >256:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+138 table CODE >257:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+139 table CODE >258:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13A table CODE >259:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13B table CODE >260:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13C table CODE >262:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13E table CODE >262:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13F table CODE >262:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+140 table CODE >262:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+141 table CODE >263:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+142 table CODE >266:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+144 table CODE >267:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+145 table CODE >269:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+146 table CODE >270:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+147 table CODE >272:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+148 table CODE >273:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+149 table CODE >274:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14A table CODE >276:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14B table CODE >277:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14C table CODE >279:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14D table CODE >280:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14E table CODE >282:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+14F table CODE >284:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+150 table CODE >287:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+152 table CODE >288:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+153 table CODE >289:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+154 table CODE >291:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+156 table CODE >292:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+157 table CODE >293:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+158 table CODE >295:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+159 table CODE >296:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15A table CODE >297:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15B table CODE >298:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15C table CODE >300:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15D table CODE >301:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15E table CODE >304:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+160 table CODE >305:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+161 table CODE >306:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+162 table CODE >308:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+164 table CODE >309:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+165 table CODE >310:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+166 table CODE >312:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+167 table CODE >313:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+168 table CODE >315:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+169 table CODE >316:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16A table CODE >317:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16B table CODE >320:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16C table CODE >321:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16D table CODE >322:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16E table CODE >324:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16F table CODE >325:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+170 table CODE >326:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+171 table CODE >327:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+172 table CODE >329:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+173 table CODE >332:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+174 table CODE >333:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+175 table CODE >334:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+176 table CODE >336:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+177 table CODE >337:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+178 table CODE >338:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+179 table CODE >340:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+0 VectorReset CODE >84:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+0 VectorReset CODE >87:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2 VectorReset CODE >88:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+3 VectorReset CODE >93:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+4 VectorReset CODE >95:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+5 VectorReset CODE >96:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+6 VectorReset CODE >97:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+7 VectorReset CODE >100:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+8 VectorReset CODE >101:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+9 VectorReset CODE >102:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+A VectorReset CODE >103:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+B VectorReset CODE >104:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+C VectorReset CODE >105:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+D VectorReset CODE >108:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+E VectorReset CODE >109:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+F VectorReset CODE >110:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+10 VectorReset CODE >111:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+11 VectorReset CODE >112:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+12 VectorReset CODE >118:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+13 VectorReset CODE >119:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+15 VectorReset CODE >119:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+16 VectorReset CODE >119:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+17 VectorReset CODE >119:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+18 VectorReset CODE >120:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+19 VectorReset CODE >124:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1A VectorReset CODE >125:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1B VectorReset CODE >126:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1C VectorReset CODE >127:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1D VectorReset CODE >128:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1E VectorReset CODE >130:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+1F VectorReset CODE >133:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+20 VectorReset CODE >134:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+21 VectorReset CODE >135:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+22 VectorReset CODE >136:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+23 VectorReset CODE >138:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+24 VectorReset CODE >141:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+25 VectorReset CODE >142:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+26 VectorReset CODE >143:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+27 VectorReset CODE >144:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+28 VectorReset CODE >146:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+29 VectorReset CODE >149:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2A VectorReset CODE >149:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2B VectorReset CODE >149:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2C VectorReset CODE >149:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2D VectorReset CODE >149:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2E VectorReset CODE >150:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+2F VectorReset CODE >151:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+30 VectorReset CODE >152:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+31 VectorReset CODE >155:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+32 VectorReset CODE >156:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+33 VectorReset CODE >157:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+34 VectorReset CODE >158:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+35 VectorReset CODE >159:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+36 VectorReset CODE >160:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+37 VectorReset CODE >161:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+38 VectorReset CODE >162:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+39 VectorReset CODE >163:C:\Users\THEJ0S3FER\Desktop\Quinto semestre\Progra de micros\LAB#6\Lab6.X\postlab.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 17A 0 ABS 0 - -
+__Hspace_1 78 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__HVectorReset 0 0 ABS 0 VectorReset -
+__Hedata 0 0 ABS 0 edata -
+__Htable 0 0 ABS 0 table -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ltable 0 0 ABS 0 table -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 78 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__LVectorReset 0 0 ABS 0 VectorReset -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_shr 1 70 70 8 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
